@@ -110,7 +110,7 @@ This project reflects practical understanding of:
 ## 📸 Screenshots
 
 ### 🏠 Home Page
-![Home](screenshots/home.png)
+![Home](screenshots/home .png)
 
 ### 📊 Dashboard
 ![Dashboard](screenshots/dashboard.png)
