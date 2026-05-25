@@ -168,7 +168,6 @@ This project demonstrates:
 ## Author
 
 **Aishwarya M**  
-Aspiring Software Developer | Interested in Web Development & Data-Driven Applications  
 
 ---
 
