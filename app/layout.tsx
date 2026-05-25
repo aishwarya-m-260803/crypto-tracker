@@ -1,6 +1,18 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import { DM_Sans } from "next/font/google";
+import { MarketProvider } from "@/context/MarketContext";
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  variable: "--font-dm",
+  weight: ["400", "500", "600"],
+});
+
+const inter = Inter({ subsets: ["latin"] });
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +39,12 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className={`${dmSans.variable} font-sans`}>
+        <MarketProvider> 
+          <Navbar />
+          {children}
+        </MarketProvider>
+      </body>
     </html>
   );
 }
